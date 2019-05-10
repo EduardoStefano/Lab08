@@ -8,10 +8,11 @@ public class TestModel {
 		
 		Model model = new Model();
 		
-		model.createGraph(4);
+		model.createGraph(5);
 		System.out.println(String.format("**Grafo creato**\n"));
+		System.out.println(model.getGrafo());
 		
-		List<String> vicini = model.displayNeighbours("casa");
+		List<String> vicini = model.displayNeighbours("xds");
 		System.out.println("Neighbours di casa: " + vicini + "\n");
 		
 		System.out.println("Cerco il vertice con grado massimo...");
